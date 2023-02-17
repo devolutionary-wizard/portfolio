@@ -1,22 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { SKILLS } from "@/constants/data";
 
-const skills: Array<skillType> = [
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "React JS" },
-  { skill: "Next JS" },
-  { skill: "React Native" },
-  { skill: "Tailwind CSS" },
-  { skill: "Chakra UI" },
-  { skill: "Material UI" },
-  { skill: "Flutter" },
-  { skill: "Laravel" },
-];
-
-interface skillType {
-  skill: String;
-}
 const AboutSection = () => {
   return (
     <section id="about">
@@ -66,7 +51,7 @@ const AboutSection = () => {
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-              {skills.map((item, idx) => {
+              {SKILLS.map((item, idx) => {
                 return (
                   <p
                     key={idx}

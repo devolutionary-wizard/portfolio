@@ -5,6 +5,7 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri";
 const ThemeToggleButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
     <>
       {currentTheme === "dark" ? (
