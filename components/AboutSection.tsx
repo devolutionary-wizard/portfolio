@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const skills = [
+const skills: Array<skillType> = [
   { skill: "JavaScript" },
   { skill: "TypeScript" },
   { skill: "React JS" },
@@ -14,6 +14,9 @@ const skills = [
   { skill: "Laravel" },
 ];
 
+interface skillType {
+  skill: String;
+}
 const AboutSection = () => {
   return (
     <section id="about">

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { HtmlHTMLAttributes } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import { UrlObject } from "url";
 
-const projects = [
+const projects: Array<projectType> = [
   {
     name: "Music App",
     description:
@@ -29,6 +30,14 @@ const projects = [
     link: "",
   },
 ];
+
+interface projectType {
+  name: String;
+  description: String;
+  image: string;
+  github: any;
+  link: any;
+}
 
 const ProjectsSection = () => {
   return (
