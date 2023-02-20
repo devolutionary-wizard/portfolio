@@ -81,4 +81,12 @@ export const SKILLS: Array<skillType> = [
       github: "https://github.com/seanglayz/power-blog",
       link: "",
     },
+     {
+      name: "Travel App",
+      description:
+        "Kator Family Photos is a photos and video digitization service in the LA area.",
+      image: "/familyphotos.png",
+      github: "https://github.com/seanglayz/travel_app",
+      link: "",
+    },
   ];
