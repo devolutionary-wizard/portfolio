@@ -15,6 +15,11 @@ export const NAV_ITEMS: Array<NavItemType> = [
       label: "About",
       page: "about",
     },
+     
+    {
+      label: "Passion",
+      page: "passion",
+    },
     // {
     //   label: "Projects",
     //   page: "projects",

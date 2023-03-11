@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { PASSIONS, SKILLS } from "@/constants/data";
+import { PASSIONS } from "@/constants/data";
 
 const PassionSection = () => {
   return (
-    <section id="about">
+    <section id="passion">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <div>
           <h1 className="text-center font-bold text-4xl">
