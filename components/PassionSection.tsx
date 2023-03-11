@@ -23,7 +23,7 @@ const PassionSection = () => {
             return (
               <div
                 key={index}
-                className="bg-teal-500  w-full md:w-1/3 h-72 md:h-96 rounded-md flex-col px-5 py-5 ">
+                className="bg-teal-500  w-full md:w-1/3 h-82 md:h-100 rounded-md flex-col px-5 py-5 ">
                 <div className="mx-auto w-28 h-28 bg-white rounded-full">
                   <div className="h-8" />
                   <Image
