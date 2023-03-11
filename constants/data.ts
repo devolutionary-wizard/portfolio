@@ -1,4 +1,4 @@
-import { NavItemType, projectType, skillType } from "./type";
+import { NavItemType, passionType, projectType, skillType } from "./type";
 import {
     AiOutlineGithub,
     AiOutlineLinkedin,
@@ -15,10 +15,10 @@ export const NAV_ITEMS: Array<NavItemType> = [
       label: "About",
       page: "about",
     },
-    {
-      label: "Projects",
-      page: "projects",
-    },
+    // {
+    //   label: "Projects",
+    //   page: "projects",
+    // },
    
   ];
 
@@ -56,6 +56,19 @@ export const SKILLS: Array<skillType> = [
     { skill: "Flutter" },
     { skill: "Laravel" },
   ];
+
+  export const PASSIONS : Array<passionType> =[{
+    "title":"Front-end",
+    "src":'/frontend.png',
+    "desc":"Creativity is nothing but the way to solve new problems. It’s through mistakes that you actually can grow. You have to get bad in order to get good",
+  },{
+    "title":"Back-end",
+    "desc":"Networks don't want a show with a continuing story. There's no backend potential.",
+    "src":'/backend.png',
+  },{
+    "title":"Mobile",
+    "desc":"Mobile is becoming not only the new digital hub, but also the bridge to the physical world. That’s why mobile will affect more than just your digital operations — it will transform your entire business.",  "src":'/mobile.png',
+  }];
 
   export const PROJECTS: Array<projectType> = [
     {

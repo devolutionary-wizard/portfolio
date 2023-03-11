@@ -12,3 +12,8 @@ export interface NavItemType {
     github: any;
     link: any;
   }
+  export interface passionType{
+    title:String,
+    desc:String, 
+    src:String | any
+  }
