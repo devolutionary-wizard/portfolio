@@ -2,6 +2,7 @@ import { NavItemType, passionType, projectType, skillType } from "./type";
 import {
     AiOutlineGithub,
     AiOutlineLinkedin,
+    AiOutlineInstagram,
     AiOutlineFacebook,
   } from "react-icons/ai";
   import { RiTelegramLine } from "react-icons/ri";
@@ -39,6 +40,10 @@ export const NAV_ITEMS: Array<NavItemType> = [
     {
       link: "https://web.facebook.com/li.seanglay.2k/",
       icon: AiOutlineFacebook,
+    },
+    {
+      link: "https://www.instagram.com/scarysnoopy/",
+      icon: AiOutlineInstagram,
     },
     {
       link: "https://t.me/SeangLayz",
