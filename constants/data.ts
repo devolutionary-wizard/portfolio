@@ -84,31 +84,31 @@ export const SKILLS: Array<skillType> = [
     {
       name: "Music App",
       description:
-        "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-      image: "/thankfulthoughts.png",
+        "",
+      image: "",
       github: "https://github.com/seanglayz/music_app",
       link: "",
     },
     {
       name: "Food Delivery",
-      description: "PlatoIO is a to do list app that built using the PERN stack.",
-      image: "/platoio.png",
+      description: "",
+      image: "",
       github: "https://github.com/seanglayz/Food_Delivery",
       link: "",
     },
     {
       name: "Power Blog",
       description:
-        "Kator Family Photos is a photos and video digitization service in the LA area.",
-      image: "/familyphotos.png",
+        "",
+      image: "",
       github: "https://github.com/seanglayz/power-blog",
       link: "",
     },
      {
       name: "Travel App",
       description:
-        "Kator Family Photos is a photos and video digitization service in the LA area.",
-      image: "/familyphotos.png",
+        "",
+      image: "",
       github: "https://github.com/seanglayz/travel_app",
       link: "",
     },
