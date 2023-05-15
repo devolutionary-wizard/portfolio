@@ -143,6 +143,14 @@ export const SKILLS: Array<skillType> = [
       link: "https://music-player-kappa-sand.vercel.app/",
     },
     {
+      name: "Power Blog",
+      description:
+        "The Blog Website project is an immersive and educational endeavor that focuses on learning Next.js and Chakra UI frameworks while constructing a visually appealing and dynamic blog platform. Utilizing the Next.js framework for efficient server-side rendering and routing, and incorporating the Chakra UI library for creating sleek and responsive user interfaces, learners will develop a fully functional blog website. The project will encompass features such as blog post creation, editing, and categorization, along with the ability to view and comment on posts. By building this project, participants will gain practical experience in front-end development, mastering Next.js and Chakra UI for creating captivating and user-friendly blog websites.",
+      image:'/power_blog.png',
+        github: "https://github.com/seanglayz/power-blog",
+      link: "https://github.com/seanglayz/power-blog",
+    },
+    {
       name: "Automata App",
       description:
         "Automata refers to a cutting-edge field of study and application that involves the design, development, and analysis of mechanical systems capable of autonomous and programmable behavior. These intricate machines, known as automata, are constructed with precision and intricacy to perform specific tasks or replicate human-like movements. Employing a combination of mechanics, electronics, and computer programming, automata possess the ability to respond to external stimuli and execute pre-defined sequences of actions. With their potential to simulate human actions and perform complex operations with precision, automata find applications in various industries, including manufacturing, robotics, and artificial intelligence research, contributing to advancements in efficiency, productivity, and innovation.",
