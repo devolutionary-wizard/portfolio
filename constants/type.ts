@@ -8,8 +8,8 @@ export interface NavItemType {
   export interface projectType {
     name: String;
     description: String;
-    image: string;
-    github: any;
+    image?: string;
+    github?: any;
     link: any;
   }
   export interface passionType{
