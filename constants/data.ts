@@ -86,20 +86,26 @@ export const SKILLS: Array<skillType> = [
       name: "ChatTask",
       description:
         "ChatTask is a productivity application crafted to empower users to independently create, monitor, and assign tasks, while facilitating effective team communication akin to that of a project management system. Our objective is to establish ChatTask as a robust tool, enabling individuals to meticulously plan and organize their endeavors towards specific objectives or targets, ensuring timely completion with minimal communication and task tracking efforts.",
-      image: "/chat_task.jpeg",
+      image: "/chat_task.png",
       link: "https://play.google.com/store/apps/details?id=com.chat_task.app",
     },
     {
       name: "Mechant MakFood",
       description: "With MakFood Merchant, both you and your esteemed clientele will experience an elevated level of satisfaction at your restaurant. This remarkable solution facilitates seamless order placement for your customers, allowing them to conveniently order remotely or directly from their table within your establishment. The ease of tracking orders and processing payments has never been more effortless. By harnessing the capabilities of MakFood Merchant, you can efficiently manage incoming orders while maintaining optimal staffing and operational arrangements. Embrace this innovative tool to enhance your restaurant's efficiency and ensure a delightful dining experience for all patrons.",
-      image: "/merchant_makfood.jpeg",
+      image: "/makfood_merchant.png",
       link: "https://play.google.com/store/apps/details?id=com.mcircle.merchantapp",
+    },
+    {
+      name: "MakFood Central",
+      description: "The MakFood Central project is an ambitious and comprehensive endeavor designed to develop a robust platform for publishing products and managing multiple restaurants. With MakFood Central, businesses can effortlessly showcase their food offerings, manage menus, and efficiently handle orders from various restaurants under one centralized system. This project aims to provide an intuitive and user-friendly interface for restaurant owners, allowing them to easily update menus, track inventory, and monitor sales performance. Additionally, MakFood Central facilitates seamless communication between restaurants and customers, ensuring a smooth ordering process and timely delivery. By undertaking this project, participants will gain valuable experience in building a powerful tool for product publishing and restaurant management, streamlining operations for food establishments.",
+      image: "/makfood_central.png",
+      link: "https://apps.microsoft.com/store/detail/makfood-central/9N9BKW7XT9KT?hl=km-kh&gl=kh",
     },
     {
       name: "Davane",
       description:
         "With Davane, you will find an enhanced level of appreciation for dining at your favorite restaurants. This innovative platform enables you to conveniently place orders from a remote location or directly at your table within the restaurant, eliminating the need for assistance from waitstaff. Furthermore, Davane provides you with a broader range of payment options, ensuring a seamless and flexible experience when settling the bill. Experience the utmost convenience and satisfaction with Davane, as it revolutionizes the way you enjoy dining out.",
-      image: "/davane.jpeg",
+      image: "/davane.png",
       link: "https://play.google.com/store/apps/details?id=com.makcircle.davanemobilecustomer",
     },
     {
@@ -117,6 +123,20 @@ export const SKILLS: Array<skillType> = [
       image:'/portfolio.png',
         github: "https://github.com/seanglayz/portfolio",
       link: "https://seanglay-portfolio.vercel.app/",
+    },
+     {
+      name: "Movie",
+      description:
+        "The Pet Grooming Website project is an engaging and educational undertaking that focuses on mastering Redux while developing a feature-rich platform for pet grooming services. In addition to Redux, the project incorporates the MovieDB API to enhance the user experience. Learners will construct a comprehensive website where pet owners can explore various grooming services, schedule appointments, and view pricing information. The integration of the MovieDB API allows for displaying relevant pet-related movies and recommendations to engage and entertain visitors. By undertaking this project, participants will gain valuable experience in Redux state management, API integration, and creating dynamic web applications tailored to the pet grooming industry.",
+      image:'/movie.png',
+      link: "https://movie-website-with-redux.vercel.app/",
+    },
+    {
+      name: "Pet Grooming",
+      description:
+        "The Pet Grooming Website project is a comprehensive and educational endeavor aimed at learning React.js and Tailwind CSS frameworks while constructing a visually stunning and user-friendly platform for pet grooming services. By leveraging the power of React.js for building dynamic and interactive components, and incorporating the versatile styling capabilities of Tailwind CSS, learners will develop a fully functional website where pet owners can explore grooming services, schedule appointments, and access information about grooming packages and pricing. The project will showcase responsive design, intuitive navigation, and appealing visuals, providing an immersive experience for visitors. By undertaking this project, participants will enhance their skills in React.js and Tailwind CSS, gaining valuable experience in front-end development for creating exceptional pet grooming websites.",
+      image:'/dog_grooming.png',
+      link: "https://dog-website-orcin.vercel.app/",
     },
     {
       name: "Youtube Clone",
@@ -160,6 +180,7 @@ export const SKILLS: Array<skillType> = [
     },
     {
       name: "Travel App",
+      image:"/no_ui.png",
       description:
         "The Travel app is a sophisticated and comprehensive platform that empowers users to plan, organize, and embark on unforgettable journeys with ease. With its intuitive interface and extensive range of features, the app serves as a one-stop solution for all travel-related needs. Users can explore a wealth of destinations, discover popular attractions, book flights, hotels, and rental cars, and access personalized itineraries tailored to their preferences. The app also provides real-time updates on travel advisories, weather conditions, and flight statuses, ensuring a smooth and informed travel experience. With its seamless integration and efficient navigation, the Travel app is a trusted companion for both leisure and business travelers, facilitating seamless exploration and creating lifelong memories.",
       github: "https://github.com/seanglayz/travel_app",
@@ -167,6 +188,7 @@ export const SKILLS: Array<skillType> = [
     },
     {
       name: "Food Delivery",
+      image:"/no_ui.png",
       description:
         "The Food Delivery app is a sophisticated and efficient platform that revolutionizes the way users access and enjoy a wide variety of culinary delights. With its user-friendly interface and extensive network of partner restaurants, the app provides a seamless and convenient solution for ordering food from the comfort of one's home or office. Users can browse through an extensive menu selection, customize their orders, and securely make payments within the app. The app also offers real-time order tracking, ensuring transparency and timely delivery. With its robust delivery infrastructure and commitment to customer satisfaction, the Food Delivery app offers a hassle-free and delightful experience, bringing the finest cuisines directly to the users' doorstep.",
       github: "https://github.com/seanglayz/Food_Delivery",
@@ -174,6 +196,7 @@ export const SKILLS: Array<skillType> = [
     },
     {
       name: "Music App",
+      image:"/no_ui.png",
       description:
         "The Music app is a sophisticated and feature-rich platform that provides users with a seamless and immersive music listening experience. With its extensive library of songs spanning various genres and artists, the app offers a vast collection of musical content to suit diverse preferences. Users can easily navigate through the app's intuitive interface to discover new music, create personalized playlists, and enjoy uninterrupted playback. Furthermore, the app provides curated recommendations based on user preferences, enhancing the discovery of new artists and songs. With its high-quality audio streaming capabilities and user-friendly controls, the Music app ensures that users can indulge in their favorite tunes with exceptional sound clarity and convenience.",
       github: "https://github.com/seanglayz/music_app",
@@ -181,6 +204,7 @@ export const SKILLS: Array<skillType> = [
     },
      {
       name: "Todo App",
+      image:"/no_ui.png",
       description:
         "The Todo app is a sophisticated and comprehensive application that provides users with a highly efficient and organized approach to managing their tasks and responsibilities. With its user-friendly interface and advanced features, this app enables individuals to effectively prioritize, track, and complete their tasks in a systematic manner. Users can effortlessly create task lists, set due dates, assign priorities, and establish reminders to ensure timely completion. Additionally, the app offers the ability to categorize tasks, attach relevant files, and collaborate with others, making it an indispensable tool for both personal and professional task management. By leveraging the Todo app, users can enhance their productivity, streamline their workflow, and accomplish their goals with utmost efficiency.",
       github: "https://github.com/seanglayz/todo_app",
