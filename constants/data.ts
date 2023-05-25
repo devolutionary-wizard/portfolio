@@ -21,10 +21,10 @@ export const NAV_ITEMS: Array<NavItemType> = [
       label: "Passion",
       page: "passion",
     },
-    {
-      label: "Projects",
-      page: "projects",
-    },
+    // {
+    //   label: "Projects",
+    //   page: "projects",
+    // },
    
   ];
 
@@ -34,7 +34,7 @@ export const NAV_ITEMS: Array<NavItemType> = [
       icon: AiOutlineGithub,
     },
     {
-      link: "https://www.linkedin.com/in/seanglay-ly-9a0584209/",
+      link: "https://www.linkedin.com/in/sasuke-uchiha-9a0584209/",
       icon: AiOutlineLinkedin,
     },
     {
