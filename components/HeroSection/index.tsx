@@ -19,7 +19,8 @@ const HeroSection = () => {
         "build Flutter apps for Android/iOS",
         "convert design into modern UI",
         "build interactive UI using React",
-        "develop websites using Next.js"
+        "develop websites using Next.js",
+        "optimize API calls for performance"
     ]);
 
     const onClick = (e: any) => scrollToEl(e);
@@ -51,7 +52,7 @@ const HeroSection = () => {
                             }}
                         >
                             <p>
-                                Hi, I&apos;m <mark>Vasile</mark> a <mark>passionate</mark> software developer.
+                                Hi, I&apos;m <mark>SEANGLAY</mark> a <mark>practitioner</mark> software engineer.
                             </p>
                         </h1>
 
@@ -98,8 +99,7 @@ const HeroSection = () => {
                                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                             }}
                         >
-                            Stick around to see some of my work.
-                        </p>
+                            Working towards creating software that makes life easier and more meaningful.                        </p>
                         <div
                             ref={ref}
                             style={{
@@ -115,38 +115,6 @@ const HeroSection = () => {
                 </div>
             </section>
         </LazyMotion>
-        // <section id="home" className="h-screen">
-        //     <div
-        //         className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
-        //
-        //         <div className="md:mt-2 md:w-3/5">
-        //             <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7">
-        //                 Hi, I&#39;m Seanglay!
-        //             </h1>
-        //             <p className="text-lg mt-4 mb-6 md:text-2xl">
-        //                 I&#39;m a{" "}
-        //                 <span className="font-semibold text-teal-600">
-        //       Software Engineer{" "}
-        //     </span>
-        //                 based in Cambodia. Working towards creating software that makes life
-        //                 easier and more meaningful.
-        //             </p>
-        //             <Link
-        //                 to=""
-        //                 className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow  hover:bg-teal-700 cursor-pointer "
-        //                 activeClass="active"
-        //                 spy={true}
-        //                 smooth={true}
-        //                 offset={-100}
-        //                 duration={500}>
-        //                 Resume
-        //             </Link>
-        //         </div>
-        //         <div className="md:mt-2 md:w-1/2">
-        //             <WelcomeAnimation/>
-        //         </div>
-        //     </div>
-        // </section>
     );
 };
 

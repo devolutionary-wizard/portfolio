@@ -1,11 +1,10 @@
 "use client";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "next-themes";
 import "../styles/globals.css"
 import {ThemeContext} from "@/context";
 import {Suspense} from "react";
 import Loading from "@/app/loading";
+import {AppHeader} from "@/components/Header";
+import {AppFooter} from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -22,9 +21,9 @@ export default function RootLayout({
 
       <body>
         <ThemeContext>
-          <Navbar />
+            <AppHeader />
             <Suspense fallback={<Loading />}>{children}</Suspense>
-            <Footer />
+            <AppFooter />
         </ThemeContext>
       </body>
     </html>
