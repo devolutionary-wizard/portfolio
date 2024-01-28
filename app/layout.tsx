@@ -2,7 +2,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
-import "./globals.css";
+import "../styles/globals.css"
+import {ThemeContext} from "@/context";
+import {Suspense} from "react";
+import Loading from "@/app/loading";
 
 export default function RootLayout({
   children,
@@ -17,12 +20,12 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="dark:bg-stone-900">
-        <ThemeProvider enableSystem={true} attribute="class">
+      <body>
+        <ThemeContext>
           <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+            <Suspense fallback={<Loading />}>{children}</Suspense>
+            <Footer />
+        </ThemeContext>
       </body>
     </html>
   );

@@ -1,46 +1,55 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
-      animation: {
-        fadeIn: "fadeIn 1.5s",
-        bounce:
-          "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
-        slideUp: "slideUp 0.5s",
-        slideUpEaseInOut: "slideUp 0.5s ease-in-out",
-        slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
-      },
-      animationDelay: {
-        0: "0s",
-        2: "0.2s",
-        4: "0.4s",
-        6: "0.6s",
-      },
-      keyframes: {
-        fadeIn: {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
-        },
-        slideUp: {
-          from: { transform: "translateY(100%)" },
-          to: { transform: "translateY(0)" },
-        },
-        bounce: {
-          from: { transform: "translateY(10px)" },
-          to: { transform: "translateY(0)" },
-        },
-      },
+    content: [
+        "./app/**/*.{js,ts,jsx,tsx}",
+        "./pages/**/*.{js,ts,jsx,tsx}",
+        "./components/**/*.{js,ts,jsx,tsx}"
+    ],
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                brand: {
+                    light: "#FBF8F3",
+                    dark: "#232332",
+                    purple: "#7928CA",
+                    pink: "#FF0080"
+                },
+                blue: {
+                    lighter: "#71c5ee",
+                    light: "#3182ce",
+                    normal: "#025091"
+                },
+                card: {
+                    dark: "rgba(255, 255, 255, 0.04)",
+                    light: "rgba(255, 255, 255, 0.80)"
+                },
+                badge: {
+                    dark: "rgba(226, 232, 240, 0.16)",
+                    light: "#F8F0E3"
+                }
+            },
+            transitionTimingFunction: {
+                "in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+                "out-back": "cubic-bezier(0.18, 0.89, 0.32, 1.28)"
+            },
+            transitionDuration: {
+                DEFAULT: "300ms"
+            },
+            backgroundImage: {
+                inherited: "inherit"
+            }
+        }
     },
-  },
-  plugins: [],
+    plugins: [
+        function ({addUtilities}) {
+            addUtilities({
+                ".flex-center": {
+                    display: "flex",
+                    "align-items": "center",
+                    "justify-content": "center"
+                }
+            });
+        }
+    ]
 };

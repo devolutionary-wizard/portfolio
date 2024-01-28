@@ -1,28 +1,39 @@
-import { useTheme } from "next-themes";
-import React from "react";
-import { RiMoonFill, RiSunLine } from "react-icons/ri";
+import {useTheme} from "next-themes";
+import {useEffect, useState} from "react";
+import {domAnimation, LazyMotion, m} from "framer-motion";
+import {animate, exit, initial, transition} from "utils";
+import {RiMoonFill, RiSunLine} from "react-icons/ri";
+
 
 const ThemeToggleButton = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+    const [mounted, setMounted] = useState(false);
+    const {theme, setTheme, systemTheme} = useTheme();
 
-  return (
-    <>
-      {currentTheme === "dark" ? (
-        <button
-          onClick={() => setTheme("light")}
-          className="bg-slate-100 p-2 rounded-xl">
-          <RiSunLine size={25} color="black" />
-        </button>
-      ) : (
-        <button
-          onClick={() => setTheme("dark")}
-          className="bg-slate-100 p-2 rounded-xl">
-          <RiMoonFill size={25} />
-        </button>
-      )}
-    </>
-  );
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+
+    useEffect(() => {
+        setMounted(true)
+    }, []);
+
+    if (!mounted) {
+        return null;
+    }
+
+    return (
+        <LazyMotion features={domAnimation}>
+            <m.button
+                className="bg-slate-100 p-2 rounded-xl"
+                onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+                initial={initial}
+                animate={animate}
+                exit={exit}
+                transition={transition}
+            >
+                {currentTheme === "dark" ? <RiSunLine size={25} color="black"/> : <RiMoonFill size={25}/>}
+            </m.button>
+        </LazyMotion>
+    );
 };
 
 export default ThemeToggleButton;
