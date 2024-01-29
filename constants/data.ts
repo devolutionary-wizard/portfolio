@@ -8,6 +8,7 @@ import {
 import {RiTelegramLine} from "react-icons/ri";
 
 export const NAV_ITEMS: Array<NavItemType> = [
+
     // {
     //     label: "Home",
     //     page: "home",
@@ -17,6 +18,7 @@ export const NAV_ITEMS: Array<NavItemType> = [
 
 export const SOCIAL_MEDIA = [
     {
+
         link: "https://github.com/devolutionary-wizard",
         icon: AiOutlineGithub,
     },
@@ -36,4 +38,5 @@ export const SOCIAL_MEDIA = [
         link: "https://t.me/SeangLayz",
         icon: RiTelegramLine,
     },
+
 ];
