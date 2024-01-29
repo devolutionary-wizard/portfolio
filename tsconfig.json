@@ -24,6 +24,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../../Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external/lib.es5.d.ts",
+    "../../Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external/lib.es5.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
