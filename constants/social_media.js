@@ -1,22 +1,22 @@
-import { BsFillEnvelopeOpenFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import {BsFillEnvelopeOpenFill, BsGithub, BsLinkedin, BsTelegram} from "react-icons/bs";
 
 export const SOCIAL_MEDIA = [
 	{
 		id: "linkedin",
 		icon: <BsLinkedin />,
 		title: "Visit LinkedIn profile",
-		url: ""
+		url: "https://www.linkedin.com/in/seanglay-ly-675192266/"
 	},
 	{
 		id: "github",
 		icon: <BsGithub />,
 		title: "Visit Github profile",
-		url: ""
+		url: "https://github.com/devolutionary-wizard"
 	},
 	{
-		id: "mail",
-		icon: <BsFillEnvelopeOpenFill />,
-		title: "Send me an email",
-		url: ""
+		id: "telegram",
+		icon: <BsTelegram/>,
+		title:'Visit Telegram profile',
+		url:'https://t.me/seanglayz'
 	}
 ];

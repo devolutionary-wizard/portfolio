@@ -4,10 +4,10 @@ import {useEffect, useRef, useState} from "react";
 import {LazyMotion, domAnimation, useInView} from "framer-motion";
 
 const TimeLineData = [
-    {year: 2024, text: "Start my journey as a Full-stack"},
-    {year: 2023, text: "Start my journey as a Software engineer"},
-    {year: 2022, text: "Start my journey as a Full-stack"},
-    {year: 2021, text: "Start a 3mo Full-stack internship"},
+    {year: 2023,month: 'Jun', text: "Start my journey as a Full-stack"},
+    {year: 2022, month: 'Apr',text: "Start my journey as a Software engineer"},
+    {year: 2022,month: 'Nov', text: "Start my journey as a Full-stack"},
+    {year: 2021, month: 'Sep', text: "Start a 3mo Full-stack internship"},
 ];
 
 export function TimeLine() {
@@ -87,7 +87,7 @@ export function TimeLine() {
                                     aria-label={"What do I do in " + item.year}
                                     className="flex items-center gap-4 text-2xl font-bold"
                                 >
-                                    {`${item.year}`}
+                                    {item.month ? `${item.month} ${item.year}` : item.year}
                                     <svg
                                         width="208"
                                         height="6"
