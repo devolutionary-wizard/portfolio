@@ -6,6 +6,8 @@ import {AppHeader} from "@/components/Header";
 import {AppFooter} from "@/components/Footer";
 
 import {GoogleTagManager} from '@next/third-parties/google'
+import { Analytics } from '@vercel/analytics/react';
+
 import * as process from "process";
 
 export default function RootLayout({
@@ -27,6 +29,7 @@ export default function RootLayout({
             <Suspense fallback={<Loading/>}>{children}</Suspense>
             <AppFooter/>
             <GoogleTagManager gtmId={process.env.GTM_ID as string}/>
+            <Analytics />
         </ThemeContext>
         </body>
         </html>
