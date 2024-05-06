@@ -4,11 +4,10 @@ import { Suspense } from "react";
 import Loading from "@/app/loading";
 import { AppHeader } from "@/components/Header";
 import { AppFooter } from "@/components/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react';
 
-import * as process from "process";
 
 export default function RootLayout({
     children,
@@ -28,8 +27,8 @@ export default function RootLayout({
                     <AppHeader />
                     <Suspense fallback={<Loading />}>{children}</Suspense>
                     <AppFooter />
-                    <GoogleTagManager gtmId={process.env.GTM_ID as string} />
                     <Analytics />
+                    <SpeedInsights />
                 </ThemeContext>
             </body>
         </html>
