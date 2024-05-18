@@ -4,10 +4,6 @@ import { Suspense } from "react";
 import Loading from "@/app/loading";
 import { AppHeader } from "@/components/Header";
 import { AppFooter } from "@/components/Footer";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
-import { Analytics } from '@vercel/analytics/react';
-
 
 export default function RootLayout({
     children,
@@ -27,8 +23,6 @@ export default function RootLayout({
                     <AppHeader />
                     <Suspense fallback={<Loading />}>{children}</Suspense>
                     <AppFooter />
-                    <Analytics />
-                    <SpeedInsights />
                 </ThemeContext>
             </body>
         </html>
