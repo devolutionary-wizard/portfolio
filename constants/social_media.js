@@ -1,4 +1,4 @@
-import {BsFillEnvelopeOpenFill, BsGithub, BsLinkedin, BsTelegram} from "react-icons/bs";
+import { BsMedium, BsGithub, BsLinkedin, BsTelegram } from "react-icons/bs";
 
 export const SOCIAL_MEDIA = [
 	{
@@ -15,8 +15,14 @@ export const SOCIAL_MEDIA = [
 	},
 	{
 		id: "telegram",
-		icon: <BsTelegram/>,
-		title:'Visit Telegram profile',
-		url:'https://t.me/seanglayz'
+		icon: <BsTelegram />,
+		title: 'Visit Telegram profile',
+		url: 'https://t.me/seanglayz'
+	},
+	{
+		id: "medium",
+		icon: <BsMedium />,
+		title: "Contact me via Medium",
+		url: "https://medium.com/@devolutionary.wizard"
 	}
 ];
